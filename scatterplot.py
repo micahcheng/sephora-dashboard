@@ -5,7 +5,7 @@ import hvplot.pandas
 pn.extension()
 
 # Load data
-data = pd.read_csv('most_used_beauty_cosmetics_products_extended.csv')
+data = pd.read_csv('data/most_used_beauty_cosmetics_products_extended.csv')
 
 # Create filters
 brand = pn.widgets.Select(name='Brand', options=['All'] + sorted(data['Brand'].unique().tolist()))
