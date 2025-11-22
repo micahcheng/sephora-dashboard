@@ -1,35 +1,36 @@
-# makeup-dashboard
-1. Clone the repository
+Makeup Dashboard
+
+This repository contains an interactive dashboard for exploring makeup product data.
+
+1. Clone the Repository
 git clone https://github.com/micahcheng/sephora-dashboard.git
 cd sephora-dashboard
 
-2. Install the required packages
-
-If using conda:
-
+2. Install the Required Packages
+Using Conda (recommended)
 conda create -n sephora python=3.10
 conda activate sephora
 pip install panel hvplot pandas numpy bokeh
 
-
-Or using pip:
-
+Using Pip
 pip install panel hvplot pandas numpy bokeh
-3. Run the dashboard (IMPORTANT)
 
-❌ Do NOT run:
+3. Run the Dashboard (Important)
+
+Do not run:
 
 python makeup_panel.py
 
 
-(This will NOT open the dashboard.)
+This will not launch the dashboard.
 
-✔ INSTEAD run:
+Instead, run:
 
 panel serve makeup_panel.py --autoreload --show
 
-4. Open dashboard in browser
+4. Open the Dashboard
 
-After running the above command, the dashboard will appear automatically, or you can open:
+The dashboard should open automatically.
+If not, you can access it at:
 
 http://localhost:5006/makeup_panel
