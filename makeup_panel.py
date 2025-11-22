@@ -309,18 +309,18 @@ plot_settings_card = pn.Card(
 
 # LAYOUT
 layout = pn.template.FastListTemplate(
-    title="🛍️ Sephora Product Finder - Discover the Best Beauty Products",
+    title="Sephora Product Finder - Discover the Best Beauty Products",
     sidebar=[filter_card, quality_filter_card, sort_card, plot_settings_card],
     theme_toggle=False,
     main=[
         summary,
         pn.Tabs(
-            ("🌟 Recommended", recommended),
-            ("📋 All Products", catalog),
-            ("💰 Price vs Rating", scatter),
-            ("🏆 Top Brands", top_brands),
-            ("📊 Price by Category", price_category),
-            ("⭐ Rating Distribution", rating_dist),
+            ("Recommended", recommended),
+            ("All Products", catalog),
+            ("Price vs Rating", scatter),
+            ("Top Brands", top_brands),
+            ("Price by Category", price_category),
+            ("Rating Distribution", rating_dist),
             active=0
         )
     ],
