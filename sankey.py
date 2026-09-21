@@ -1,6 +1,6 @@
 """
 File: sankey.py
-Author: Bridget Crampton
+Author: micah Cheng
 Description: Build single-layer or multi-layer Sankey diagrams from a DataFrame.
 """
 

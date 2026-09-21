@@ -127,16 +127,16 @@ def get_summary_stats(brand, category, online_only, exclusive, min_rating, price
 
     return pn.pane.Markdown(
         f"""
-        ## 📊 Summary Statistics
+        ##  Summary Statistics
 
         - **Total Products:** {summary['Total Products']}  
         - **Average Rating:** {avg_rating_str}
-        - **Highly Rated Products (4.5+):** {highly_rated} 🌟
+        - **Highly Rated Products (4.5+):** {highly_rated} 
         - **Average Price:** {avg_price_str}  
         - **Exclusive Products:** {summary['Exclusive Products']}  
         - **Online Only Products:** {summary['Online Only Products']}
 
-        💡 **Tip:** Use the rating and review filters to find the most trusted products!
+         **Tip:** Use the rating and review filters to find the most trusted products!
         """,
         styles={'background-color': '#fff3f8', 'padding': '20px', 'border-radius': '10px',
                 'border': '2px solid #ffd1dc'}
@@ -163,7 +163,7 @@ def get_recommended_products(brand, category, online_only, exclusive, min_rating
     available_cols = [col for col in display_cols if col in recommended.columns]
 
     return pn.Column(
-        pn.pane.Markdown("### 🌟 Top Recommended Products (4.0+ rating, 50+ reviews)"),
+        pn.pane.Markdown("###  Top Recommended Products (4.0+ rating, 50+ reviews)"),
         pn.widgets.Tabulator(
             recommended[available_cols],
             selectable=False,
@@ -280,7 +280,7 @@ filter_card = pn.Card(
 
 quality_filter_card = pn.Card(
     pn.Column(
-        pn.pane.Markdown("### ⭐ Quality Filters"),
+        pn.pane.Markdown("###  Quality Filters"),
         pn.pane.Markdown("*Filter for highly-rated, well-reviewed products*"),
         min_rating,
         min_reviews,
