@@ -2,7 +2,7 @@ import panel as pn
 import hvplot.pandas
 from makeupapi import BeautyProductAPI
 
-pn.extension()
+pn.extension('tabulator')
 
 api = BeautyProductAPI()
 api.load_data('data/sephora_website_dataset.csv')
@@ -326,6 +326,3 @@ layout = pn.template.FastListTemplate(
     ],
     header_background='#ffd1dc'
 ).servable()
-
-if __name__ == "__main__":
-    layout.show()
